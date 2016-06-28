@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ilham Farobi</title>
-    <link>http://blog.ilhamfarobi.com/</link>
+    <link>https://ifarobi.github.io/</link>
     <description>Recent content on Ilham Farobi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
     <lastBuildDate>Mon, 13 Jun 2016 01:36:32 +0700</lastBuildDate>
-    <atom:link href="http://blog.ilhamfarobi.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ifarobi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hi Hugo</title>
-      <link>http://blog.ilhamfarobi.com/post/hi-hugo/</link>
+      <link>https://ifarobi.github.io/post/hi-hugo/</link>
       <pubDate>Mon, 13 Jun 2016 01:36:32 +0700</pubDate>
       
-      <guid>http://blog.ilhamfarobi.com/post/hi-hugo/</guid>
+      <guid>https://ifarobi.github.io/post/hi-hugo/</guid>
       <description>&lt;p&gt;Awal kisah, saya pengen mulai belajar menulis, pengen bagi-bagi sesuatu apa yang saya punya di pikiran maupun di hati &lt;em&gt;#tsah&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Okesip, mulai deh mikir pake platform blog apa.&lt;/p&gt;
