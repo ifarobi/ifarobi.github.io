@@ -1,0 +1,207 @@
+    <!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta keyword='ilham, ilham farobi, software engineer, engineer, web developer, android, reactjs, react-native, golang, nodejs, ifarobi'>
+		<meta name="author" content="Ilham Farobi">
+		<meta name="description" content="Ilham&#39;s personal website.">
+		<meta name="generator" content="Hugo 0.16-DEV" />
+		<title>Hi Hugo &middot; Ilham Farobi</title>
+		<link rel="shortcut icon" href="http://blog.ilhamfarobi.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://blog.ilhamfarobi.com/css/style.css">
+		<link rel="stylesheet" href="http://blog.ilhamfarobi.com/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="http://blog.ilhamfarobi.com/css/monosocialiconsfont.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://blog.ilhamfarobi.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://ilhamfarobi.com'>About</a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>Hi Hugo</h1>
+                    <h2 class="headline">
+                    June 13, 2016 
+                    <br>
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <p>Awal kisah, saya pengen mulai belajar menulis, pengen bagi-bagi sesuatu apa yang saya punya di pikiran maupun di hati <em>#tsah</em>.</p>
+
+<p>Okesip, mulai deh mikir pake platform blog apa.</p>
+
+<p>Dulu pernah pakai <a href="https://ghost.org">Ghost</a>, walaupun cuma bertahan beberapa minggu karena kurang aktif menulis. Platform blog ini sangat bagus bagi penggemar NodeJS. Sudah lengkap dengan dashboard admin dan editornya yang menggunakan Markdown.</p>
+
+<p>Sayangnya Ghost memakan storage cukup banyak terutama di bagian <em>pakage-nya</em> (yah begitulah <code>npm</code> <em>#hiks</em>). Dan akhirnya saya memutuskan untuk memakai static web generator, itung-itung saya gak perlu mikirin keamanannya soalnya statis hihi&hellip;</p>
+
+<p>Disini awal mula saya berjodoh dengan <a href="https://gohugo.io">Hugo</a>. Doakan semoga langgeng dan bisa istiqomah ya <em>#eh</em>.</p>
+
+<p>Hugo adalah project <strong>open source</strong> dibuat menggunakan bahasa pemrograman <a href="https://golang.org/">Go</a>. Cara kerja Hugo yaitu dengan mengkonversi konten-konten yang telah kita tulis dengan menggunakan <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> dan juga template web yang telah kita pilih menjadi halaman HTML statis. Semua konten dari blog tersimpan di folder <code>content</code>. Berikut contoh jika kita ingin membuat konten yang berjudul <strong>Ini Post Pertama</strong>.</p>
+
+<pre><code class="language-sh">$ hugo new site blog
+$ hugo new post/ini-post-pertama.md
+$ hugo server --buildDrafts
+</code></pre>
+
+<pre><code class="language-sh">0 of 1 draft rendered
+0 future content
+0 pages created
+0 paginator pages created
+0 tags created
+0 categories created
+in 9 ms
+Watching for changes in /home/ifarobi/Hugo/bookshelf/{data,content,layouts,static}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>Dari hasil diatas bisa kita lihat kalau ada draft yang tidak ikut di-render. Maka kita bisa menggunakan <code>--buildDrafts</code> parameter untuk me-rendernya.</p>
+
+<pre><code class="language-sh">$ hugo server --buildDrafts
+</code></pre>
+
+<p>Contoh diatas hanyalah sebatas membuat post baru dan menampilkannya. Sebelumnya kita harus menggunakan template. Untuk template bisa kita pilih <a href="themes.gohugo.io">disini</a>. Setelah template ter-install kita bisa langsung menggunakan parameter <code>--theme</code> atau langsung mengisi di konfigurasi <code>config.toml</code>.</p>
+
+<pre><code class="language-sh">$ hugo server --theme=hugo_theme_robust --buildDrafts
+</code></pre>
+
+<p>Konten yang kita buat sebelumnya tersimpan dengan status <em>draft</em>. Untuk mengubah status menjadi publish :</p>
+
+<pre><code class="language-sh">$ hugo undraft content/post/ini-post-pertama.md
+</code></pre>
+
+<p>Jika semua sudah siap untuk di-generate dan di publish.</p>
+
+<pre><code class="language-sh">$ hugo
+</code></pre>
+
+<p>Command diatas akan meng-generate template yang telah di setting di <code>config.toml</code> dan konten-konten yang telah dibuat. Setelah HTML ter-generate, kita bisa menempatkannya ke Github, Bitbucket, maupun shared hosting, karena ini hanya HTML biasa. Mantap to?</p>
+
+<p>Hugo juga menyediakan template yang cukup banyak, dan sangat mudah untuk di <em>customize</em>. Setiap template mengambil parameter konfigurasi yang ada dalam file <code>config.toml</code>.</p>
+
+<p>Ohiya ini bukan tulisan sebuah tutorial ya, ini cuma memperkenal kan Hugo saja. Untuk tutorial lebih detilnya langsung saja dilihat di <a href="http://gohugo.io/overview/quickstart/">dokumentasinya</a>.</p>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                        <div class="profile-desc">
+                            <span class="dark">Ilham Farobi</span>
+                            <span>Information System Student at Telkom University. Muslim. 21th. Software Engineer. Dreamer (I mean Sleep-er). Sometimes play a game, reading a book, write something random and do the other random.</span>
+                        </div>
+                <section id="sharing">
+                    <span class="dark">Share This Post</span>
+                    <div>
+                        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fblog.ilhamfarobi.com%2fpost%2fhi-hugo%2f - Hi%20Hugo by @IFarobi%2f"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                    </div>
+                </section>
+            </footer>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'ilhamfarobi';
+    var disqus_identifier = 'http:\/\/blog.ilhamfarobi.com\/post\/hi-hugo\/';
+    var disqus_title = 'Hi Hugo';
+    var disqus_url = 'http:\/\/blog.ilhamfarobi.com\/post\/hi-hugo\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://blog.ilhamfarobi.com/post/hi-hugo/">Hi Hugo<aside class="dates">Jun 13</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/ifarobi">
+        circlefacebook
+    </a>
+    
+    <a class="symbol" href="https://www.instagram.com/ifarobi">
+        circleinstagram
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/IFarobi">
+        circletwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        Ilham Farobi
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://blog.ilhamfarobi.com/js/main.js"></script>
+<script src="http://blog.ilhamfarobi.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-79269305-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+    </body>
+</html>

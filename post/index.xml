@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Ilham Farobi</title>
+    <link>http://blog.ilhamfarobi.com/post/</link>
+    <description>Recent content in Posts on Ilham Farobi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Mon, 13 Jun 2016 01:36:32 +0700</lastBuildDate>
+    <atom:link href="http://blog.ilhamfarobi.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hi Hugo</title>
+      <link>http://blog.ilhamfarobi.com/post/hi-hugo/</link>
+      <pubDate>Mon, 13 Jun 2016 01:36:32 +0700</pubDate>
+      
+      <guid>http://blog.ilhamfarobi.com/post/hi-hugo/</guid>
+      <description>&lt;p&gt;Awal kisah, saya pengen mulai belajar menulis, pengen bagi-bagi sesuatu apa yang saya punya di pikiran maupun di hati &lt;em&gt;#tsah&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Okesip, mulai deh mikir pake platform blog apa.&lt;/p&gt;
+
+&lt;p&gt;Dulu pernah pakai &lt;a href=&#34;https://ghost.org&#34;&gt;Ghost&lt;/a&gt;, walaupun cuma bertahan beberapa minggu karena kurang aktif menulis. Platform blog ini sangat bagus bagi penggemar NodeJS. Sudah lengkap dengan dashboard admin dan editornya yang menggunakan Markdown.&lt;/p&gt;
+
+&lt;p&gt;Sayangnya Ghost memakan storage cukup banyak terutama di bagian &lt;em&gt;pakage-nya&lt;/em&gt; (yah begitulah &lt;code&gt;npm&lt;/code&gt; &lt;em&gt;#hiks&lt;/em&gt;). Dan akhirnya saya memutuskan untuk memakai static web generator, itung-itung saya gak perlu mikirin keamanannya soalnya statis hihi&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Disini awal mula saya berjodoh dengan &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Doakan semoga langgeng dan bisa istiqomah ya &lt;em&gt;#eh&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hugo adalah project &lt;strong&gt;open source&lt;/strong&gt; dibuat menggunakan bahasa pemrograman &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt;. Cara kerja Hugo yaitu dengan mengkonversi konten-konten yang telah kita tulis dengan menggunakan &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;Markdown&lt;/a&gt; dan juga template web yang telah kita pilih menjadi halaman HTML statis. Semua konten dari blog tersimpan di folder &lt;code&gt;content&lt;/code&gt;. Berikut contoh jika kita ingin membuat konten yang berjudul &lt;strong&gt;Ini Post Pertama&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo new site blog
+$ hugo new post/ini-post-pertama.md
+$ hugo server --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;0 of 1 draft rendered
+0 future content
+0 pages created
+0 paginator pages created
+0 tags created
+0 categories created
+in 9 ms
+Watching for changes in /home/ifarobi/Hugo/bookshelf/{data,content,layouts,static}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Dari hasil diatas bisa kita lihat kalau ada draft yang tidak ikut di-render. Maka kita bisa menggunakan &lt;code&gt;--buildDrafts&lt;/code&gt; parameter untuk me-rendernya.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo server --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Contoh diatas hanyalah sebatas membuat post baru dan menampilkannya. Sebelumnya kita harus menggunakan template. Untuk template bisa kita pilih &lt;a href=&#34;themes.gohugo.io&#34;&gt;disini&lt;/a&gt;. Setelah template ter-install kita bisa langsung menggunakan parameter &lt;code&gt;--theme&lt;/code&gt; atau langsung mengisi di konfigurasi &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo server --theme=hugo_theme_robust --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Konten yang kita buat sebelumnya tersimpan dengan status &lt;em&gt;draft&lt;/em&gt;. Untuk mengubah status menjadi publish :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo undraft content/post/ini-post-pertama.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Jika semua sudah siap untuk di-generate dan di publish.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Command diatas akan meng-generate template yang telah di setting di &lt;code&gt;config.toml&lt;/code&gt; dan konten-konten yang telah dibuat. Setelah HTML ter-generate, kita bisa menempatkannya ke Github, Bitbucket, maupun shared hosting, karena ini hanya HTML biasa. Mantap to?&lt;/p&gt;
+
+&lt;p&gt;Hugo juga menyediakan template yang cukup banyak, dan sangat mudah untuk di &lt;em&gt;customize&lt;/em&gt;. Setiap template mengambil parameter konfigurasi yang ada dalam file &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ohiya ini bukan tulisan sebuah tutorial ya, ini cuma memperkenal kan Hugo saja. Untuk tutorial lebih detilnya langsung saja dilihat di &lt;a href=&#34;http://gohugo.io/overview/quickstart/&#34;&gt;dokumentasinya&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
